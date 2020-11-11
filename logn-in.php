@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pass = $_POST["Password"];
         $login = false;
         foreach ($arr as $value) {
-            if ($user == $arr[0][0] && $pass == $arr[0][1]) {
+            if ($user == $value[0] && $pass == $value[1]) {
                 header("location: https://github.com/Le-Quynh-29/php-logn-in.git");
                 $login = true;
                 break;
